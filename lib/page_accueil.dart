@@ -10,25 +10,32 @@ class  accueil extends StatefulWidget {
 
 class _accueilState extends State<accueil> {
   int _selectedIndex = 0;
-  static const TextStyle optionStyle =
-  TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
-  static const List<Widget> _widgetOptions = <Widget>[
-    Text(
-      'Index 0: Page accueille',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 1: Page recherche',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 2: Page réservation',
-      style: optionStyle,
-    ),
-    Text(
-      'Index 3: Page profil',
-      style: optionStyle,
-    ),
+ final List<Widget> _widgetOptions =<Widget>[
+  Container(
+
+  ),
+   Container(
+     child: const Text(
+       'Seach',
+       style: TextStyle(fontSize: 40),
+     ),
+   ),
+   Container(
+     child: const Text(
+       'Reservation',
+       style: TextStyle(fontSize: 40),
+     ),
+   ),
+   Container(
+     color: Colors.green,
+     alignment: Alignment.center,
+     child: const Text(
+       'Profil',
+       style: TextStyle(fontSize: 40),
+     ),
+
+   ),
+
   ];
 
   void _onItemTapped(int index) {
@@ -41,9 +48,7 @@ class _accueilState extends State<accueil> {
   Widget build(BuildContext context) {
     return Scaffold(
 
-      body: Center(
-        child: _widgetOptions.elementAt(_selectedIndex),
-      ),
+      body: _widgetOptions[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
