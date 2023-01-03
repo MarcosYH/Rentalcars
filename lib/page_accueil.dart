@@ -14,8 +14,17 @@ class _accueilState extends State<accueil> {
  final List<Widget> _widgetOptions =<Widget>[
   Scaffold(
     appBar: AppBar(
+      centerTitle: true,
       backgroundColor: Colors.white,
-      title: Text("Rapid Tech"),
+      title: Text(
+        "ACCEUIL",
+        style: TextStyle(
+          fontFamily: 'Montserrat',
+        fontSize: 20,
+        color: const Color(0xff656d74),
+        fontWeight: FontWeight.w700,),
+        ),
+
       iconTheme: IconThemeData(color: Colors.black),
     ),
     drawer: Drawer(
