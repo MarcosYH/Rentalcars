@@ -101,7 +101,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: Text(
                           'Connexion',),
                           style: ElevatedButton.styleFrom (
-                          backgroundColor: const Color(0xff656d74),
+                          backgroundColor: const Color(0xff2195f2),
                             textStyle: const TextStyle(
                               color: Colors.white,
                               fontFamily: 'Montserrat',
@@ -132,7 +132,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         child: Text(
                           'Créé un compte', ),
                         style: ElevatedButton.styleFrom (
-                          backgroundColor: const Color(0xffb9bcbe),
+                          backgroundColor: const Color(0xff2194f1),
                           textStyle: const TextStyle(
                             color: Colors.white,
                             fontFamily: 'Montserrat',
