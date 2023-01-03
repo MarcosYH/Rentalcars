@@ -9,30 +9,36 @@ class  accueil extends StatefulWidget {
 }
 
 class _accueilState extends State<accueil> {
+  GlobalKey<ScaffoldState> _globalKey= GlobalKey<ScaffoldState>();
   int _selectedIndex = 0;
  final List<Widget> _widgetOptions =<Widget>[
-  Container(
+  Scaffold(
+    appBar: AppBar(
+      backgroundColor: Colors.white,
+      title: Text("Rapid Tech"),
+      iconTheme: IconThemeData(color: Colors.black),
+    ),
+    drawer: Drawer(
+      child: SingleChildScrollView(
+        child: Container(
+          child: Column(
+            children: [
+
+            ],
+          ),
+        ),
+      ),
+    ),
+
 
   ),
-   Container(
-     child: const Text(
-       'Seach',
-       style: TextStyle(fontSize: 40),
-     ),
+   Scaffold(
+
    ),
-   Container(
-     child: const Text(
-       'Reservation',
-       style: TextStyle(fontSize: 40),
-     ),
+   Scaffold(
+
    ),
-   Container(
-     color: Colors.green,
-     alignment: Alignment.center,
-     child: const Text(
-       'Profil',
-       style: TextStyle(fontSize: 40),
-     ),
+   Scaffold(
 
    ),
 
