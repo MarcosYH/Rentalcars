@@ -125,7 +125,7 @@ class _accueilState extends State<accueil> {
                      borderRadius: BorderRadius.circular(15.0)
                  ),
                ),
-               onPressed: (){  },
+               onPressed: (){ },
                child: Row(
                  children: [
                    Icon(Icons.person, size: 20, color: Colors.black,),
